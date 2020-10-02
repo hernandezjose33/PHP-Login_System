@@ -1,3 +1,10 @@
+<?php 
+    //allow the config
+    define('__CONFIG__', true );
+    //require the config
+    require_once "inc/config.php"; 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +24,7 @@
             <div class="col-lg-8 d-none d-lg-block">
                 <div class="card text-center card-form">
 				    <div class="card-body">
-                        <form id="contact-form" method="post" action="contact.php" role="form">
+                        <form id="contact-form" method="post" role="form">
                             <div class="controls"> 
                                 <div class="form-group">
                                     Email
@@ -36,5 +43,7 @@
                 </div>
             </div>
         </div>
+        
+        <?php require_once "inc/footer.php"; ?>
     </body>
 </html>
